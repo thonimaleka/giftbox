@@ -1,8 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {ProductService} from 'src/app/services/product.service';
 import {AppComponent} from '../../app/app.component';
-import { ActivatedRoute, Router } from '@angular/router';
-
-
+import {Product} from 'src/app/models/product';
+import {MessengerService}  from 'src/app/services/messenger.service';
+import {CartComponent} from 'src/app/cart/cart.component'
 
 @Component({
   selector: 'app-product',
@@ -11,15 +12,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductComponent implements OnInit {
 
-  @Input() product: any;
+ 
+  @Input() product: Product
   @Input() products: any[];
-  @Output() productAdded = new EventEmitter();
-
-  constructor(private _app: AppComponent,private _router:Router) { }
-  productList= this._app.productList;
-
+  
+  constructor(private _app: AppComponent,  private productService: ProductService,
+    private msg: MessengerService) { }
 
   ngOnInit(): void {
+  }
+
+  handleAddToCart(){
+    this.msg.sendMsg(this.product);
   }
 
 }

@@ -14,7 +14,7 @@ export class LandingComponent implements OnInit {
 
   constructor(private _app: AppComponent,private _activatedRoute:ActivatedRoute,
     private _router:Router) { }
-  productList= this._app.productList;
+  // productList= this._app.productList;
 
   ngOnInit(): void {
   }

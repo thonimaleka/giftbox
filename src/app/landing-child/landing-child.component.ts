@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {AppComponent} from '../../app/app.component';
 import { ActivatedRoute, Router } from '@angular/router';
+import {ProductService} from 'src/app/services/product.service';
+import {Product} from 'src/app/models/product';
 
 
 @Component({
@@ -10,15 +12,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class LandingChildComponent implements OnInit {
 
-  @Input() product: any;
-  @Input() products: any[];
-  @Output() productAdded = new EventEmitter();
+  productList: Product[] = [];
+  // @Input() product: any;
+  // @Input() products: any[];
+  // @Output() productAdded = new EventEmitter();
 
   constructor(private _app: AppComponent, private _activatedRoute:ActivatedRoute,
-    private _router:Router) { }
-  productList= this._app.productList;
+    private _router:Router, private productService: ProductService) { }
+  //productList= this._app.productList;
 
-  ngOnInit(): void {
+  ngOnInit()  {
+    this.productList = this.productService.getProducts();
   }
 
 }
