@@ -1,0 +1,157 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Valentine Heart",
+      "description": "Giftbox ideal for valentines day for your significant other",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQdefgRvIBfKaj1AknxgFxZPxYa2jHB1mtnQ&usqp=CAU",
+      "price": 124
+    },
+    {
+      "id": 2,
+      "name": "RedRiding",
+      "description": "Red box with gold bow",
+      "img": "https://5.imimg.com/data5/IH/JL/MY-47546568/gift-box-500x500.jpg",
+      "price": 150
+    },
+    {
+      "id": 3,
+      "name": "Rose Gold box",
+      "description": "For your significant other",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjWLddSl54fvd9FX1osLhdDbWN_SkdTSD-8g&usqp=CAU",
+      "price": 105
+    },
+    {
+      "id": 4,
+      "name": "Leopard print box",
+      "description": "Giftbox for the lovers of Leopard Print",
+      "img": "https://www.merrypak.co.za/app/uploads/B30305A-500x500.jpg",
+      "price": 80
+    },
+    {
+      "id": 5,
+      "name": "Pink Stripped Box",
+      "description": "Pink giftbox with stripped details on the sides",
+      "img": "https://mk0westpacklife7j5h4.kinstacdn.com/wp-content/uploads/99482.jpg",
+      "price": 70
+    },
+    {
+      "id": 6,
+      "name": "Gold stunner",
+      "description": "Gold giftbox best fits for 21+ birthdays or wedding gift",
+      "img": "https://previews.123rf.com/images/timmary/timmary1306/timmary130600012/20451784-gift-box-and-gold-ribbon-isolated-on-white-background.jpg",
+      "price": 269
+    },
+    {
+      "id": 7,
+      "name": "Marble Box",
+      "description": "Nice subtle black and white box ideal for either gender gifting",
+      "img": "https://media.zid.store/e5658203-c2e2-4ac2-b451-fdefb7deaae7/208a339a-59f5-4c9f-a52d-9e7f0589f2c1.png",
+      "price": 300
+    },
+    {
+      "id": 8,
+      "name": "Rounded White Box",
+      "description": "White box with blue bow",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT85TuReFPJN9ym-LV9F2SjxAhsV27NSbtemg&usqp=CAU",
+      "price": 250
+    },
+    {
+      "id": 9,
+      "name": "Purple Rose Box",
+      "description": "Purple unique universal giftbox",
+      "img": "https://m.media-amazon.com/images/I/61i1StiwdiL._SR500,500_.jpg",
+      "price": 190
+    },
+    {
+      "id": 10,
+      "name": "Rose Gold Box",
+      "description": "Luxurious giftbox ideal for the other gender",
+      "img": "https://store.huskdesignblog.com/wp-content/uploads/2019/10/Omakase-by-Sindroms-image-by-Andr%C3%A9s-Reisinger-huskdesignblog10.jpg",
+      "price": 275
+    },
+    {
+      "id": 11,
+      "name": "General giftbox",
+      "description": "Made for any kind of gifting like birthdays",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBuPfAeWOsGZyiyGZu3bCXTc3i_WJsAGF3IQ&usqp=CAU",
+      "price": 50
+    },
+    {
+      "id": 12,
+      "name": "Bridesmaid Love",
+      "description": "Giftbox for specially appreciating your lovely bridesmaids after your special wedding",
+      "img": "https://cdn.shopify.com/s/files/1/0084/6236/8865/products/Rose_Gold_Bridesmaid_Box_1060x_1_1200x1200.jpg?v=1557591329",
+      "price": 60
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 10,
+        "name": "Rose Gold Box",
+        "description": "Luxurious giftbox ideal for the other gender",
+        "img": "https://store.huskdesignblog.com/wp-content/uploads/2019/10/Omakase-by-Sindroms-image-by-Andr%C3%A9s-Reisinger-huskdesignblog10.jpg",
+        "price": 275
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 11,
+        "name": "General giftbox",
+        "description": "Made for any kind of gifting like birthdays",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBuPfAeWOsGZyiyGZu3bCXTc3i_WJsAGF3IQ&usqp=CAU",
+        "price": 50
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 10,
+        "name": "Rose Gold Box",
+        "description": "Luxurious giftbox ideal for the other gender",
+        "img": "https://store.huskdesignblog.com/wp-content/uploads/2019/10/Omakase-by-Sindroms-image-by-Andr%C3%A9s-Reisinger-huskdesignblog10.jpg",
+        "price": 275
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 11,
+        "name": "General giftbox",
+        "description": "Made for any kind of gifting like birthdays",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBuPfAeWOsGZyiyGZu3bCXTc3i_WJsAGF3IQ&usqp=CAU",
+        "price": 50
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 12,
+        "name": "Bridesmaid Love",
+        "description": "Giftbox for specially appreciating your lovely bridesmaids after your special wedding",
+        "img": "https://cdn.shopify.com/s/files/1/0084/6236/8865/products/Rose_Gold_Bridesmaid_Box_1060x_1_1200x1200.jpg?v=1557591329",
+        "price": 60
+      },
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -6,11 +6,11 @@ export class Product {
     price: number;
 
 
-constructor(id , img  , name, description = '', price = 0){
-    this.id = id
-    this.img = img
-    this.name = name
-    this.description = description
-    this.price = price
-}
+// constructor(id , img  , name, description = '', price = 0){
+//     this.id = id
+//     this.img = img
+//     this.name = name
+//     this.description = description
+//     this.price = price
+// }
 }

@@ -22,7 +22,9 @@ export class LandingChildComponent implements OnInit {
   //productList= this._app.productList;
 
   ngOnInit()  {
-    this.productList = this.productService.getProducts();
+   this.productService.getProducts().subscribe((products) => {
+     this.productList = products;
+   })
   }
 
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {Product} from 'src/app/models/product';
 import {MessengerService} from 'src/app/services/messenger.service';
+import { CartService } from '../services/cart.service';
+import { CartItem } from '../models/cart-item';
 
 @Component({
   selector: 'app-cart',
@@ -18,74 +20,41 @@ export class CartComponent implements OnInit {
   ];
   
   cartTotal= 0;
-  constructor(private msg: MessengerService) { }
+  constructor(private msg: MessengerService, private cartService: CartService) { }
 
   ngOnInit() {
-
-    this.msg.getMsg().subscribe((product: Product) => {
-      // console.log(product)
-      this.addProductToCart(product)      
-    })
-
-    
+    this.handleSubscription();
+    this.loadCartItems();
   }
 
-  addProductToCart(product: Product){
-    let productExists = false;
-    for(let i in this.cartItem){
-          if(this.cartItem[i].productId === product.id){
-    
-            this.cartItem[i].qty++
-           productExists= true
-           break;
-          }
-        }
 
-        if(!productExists){
-          this.cartItem.push({
-                productId: product.id,
-                productName: product.name,
-                qty:1,
-                price: product.price
-          
-              })
-        }
-
-
-    // if(this.cartItem.length === 0){
-    //   this.cartItem.push({
-    //     productId: product.id,
-    //     productName: product.name,
-    //     qty:1,
-    //     price: product.price
+handleSubscription(){
   
-    //   })
-      
-    // } else{
-    //   for(let i in this.cartItem){
-    //     if(this.cartItem[i].productId === product.id){
-  
-    //       this.cartItem[i].qty++
-         
-    //     }else{
-    //       this.cartItem.push({
-    //         productId: product.id,
-    //         productName: product.name,
-    //         qty:1,
-    //         price: product.price
-      
-    //       })
-    //     }
-    //   }
-    // }
-    
-    
+  this.msg.getMsg().subscribe((product: Product) => {
+    // console.log(product)
+    // this.addProductToCart(product)  
+    this.loadCartItems();    
+  })
+}
 
-    this.cartTotal = 0;
-    this.cartItem.forEach(item =>{
-      this.cartTotal += (item.qty * item.price)
-    })
+loadCartItems(){
+  this.cartService.getCartItems().subscribe((items: CartItem[]) =>{
+   this.cartItem = items; 
+   this.calcCartTotal();
+  }  )
+
+}
+
+
+
+
+ calcCartTotal(){
+  this.cartTotal = 0;
+  this.cartItem.forEach(item =>{
+    this.cartTotal += (item.qty * item.price)
+  })
+ }
    
-  }
+ 
 
 }
