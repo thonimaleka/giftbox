@@ -26,13 +26,60 @@ export class CartComponent implements OnInit {
     this.handleSubscription();
     this.loadCartItems();
   }
+  // addProductToCart(product: Product){
+  //   let productExists = false;
+  //   for(let i in this.cartItem){
+  //         if(this.cartItem[i].productId === product.id){
+    
+  //           this.cartItem[i].qty++
+  //          productExists= true
+  //          break;
+  //         }
+  //       }
 
+  //       if(!productExists){
+  //         this.cartItem.push({
+  //               productId: product.id,
+  //               productName: product.name,
+  //               qty:1,
+  //               price: product.price
+          
+  //             })
+  //       }
+
+
+    // if(this.cartItem.length === 0){
+    //   this.cartItem.push({
+    //     productId: product.id,
+    //     productName: product.name,
+    //     qty:1,
+    //     price: product.price
+  
+    //   })
+      
+    // } else{
+    //   for(let i in this.cartItem){
+    //     if(this.cartItem[i].productId === product.id){
+  
+    //       this.cartItem[i].qty++
+         
+    //     }else{
+    //       this.cartItem.push({
+    //         productId: product.id,
+    //         productName: product.name,
+    //         qty:1,
+    //         price: product.price
+      
+    //       })
+    //     }
+    //   }
+    // }
 
 handleSubscription(){
   
   this.msg.getMsg().subscribe((product: Product) => {
     // console.log(product)
-    // this.addProductToCart(product)  
+     //this.addProductToCart(product)  
     this.loadCartItems();    
   })
 }

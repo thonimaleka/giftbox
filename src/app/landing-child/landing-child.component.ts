@@ -3,6 +3,7 @@ import {AppComponent} from '../../app/app.component';
 import { ActivatedRoute, Router } from '@angular/router';
 import {ProductService} from 'src/app/services/product.service';
 import {Product} from 'src/app/models/product';
+import { WishlistService } from '../services/wishlist.service';
 
 
 @Component({
@@ -13,18 +14,32 @@ import {Product} from 'src/app/models/product';
 export class LandingChildComponent implements OnInit {
 
   productList: Product[] = [];
+  wishlist: number[] = [];
   // @Input() product: any;
   // @Input() products: any[];
   // @Output() productAdded = new EventEmitter();
 
   constructor(private _app: AppComponent, private _activatedRoute:ActivatedRoute,
-    private _router:Router, private productService: ProductService) { }
+    private _router:Router, private productService: ProductService, private wishlistService: WishlistService) { }
   //productList= this._app.productList;
 
   ngOnInit()  {
-   this.productService.getProducts().subscribe((products) => {
-     this.productList = products;
-   })
+   this.loadProducts();
+   this.loadWishlist();
+  }
+
+  loadProducts(){
+    this.productService.getProducts().subscribe((products) => {
+      this.productList = products;
+      
+    })
+  }
+
+  loadWishlist(){
+    this.wishlistService.getWishlist().subscribe(productIds => {
+      //console.log(productIds);
+      this.wishlist = productIds;
+    })    
   }
 
 }

@@ -2,3 +2,8 @@
     font-size: smaller;
     
 }
+.fa-heart {
+    color: rgb(212, 29, 29);
+    cursor: pointer;
+
+}
