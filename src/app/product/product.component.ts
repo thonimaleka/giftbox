@@ -16,7 +16,7 @@ import { WishlistService } from '../services/wishlist.service';
 export class ProductComponent implements OnInit {
 
  
-  @Input() productItem: Product
+  @Input() productItem: Product;
   @Input() products: any[];
  @Input() addedToWishlist: boolean;
   

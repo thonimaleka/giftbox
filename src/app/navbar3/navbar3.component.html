@@ -1,10 +1,10 @@
 <nav>
     <div class="logo">
-        <a  class="navbar-brand" href="#"><h4>Giftbox</h4></a>
+        <a  class="navbar-brand" [routerLink]="['/']"><h4>Giftbox</h4></a>
     </div>
     <ul class="nav-links">
         <li>
-            <a href="../home/">Home</a>
+            <a [routerLink]="['/home']">Home</a>
         </li>
         <!-- <li>
             <a href="#">Categories</a>
@@ -33,10 +33,10 @@
             </div>
         </li>
         <li>
-            <a href="../cart/">Cart</a>
+            <a [routerLink]="['/cart']">Cart</a>
         </li>
         <li>
-            <a href="#"> Wishlist 
+            <a [routerLink]="['/wishlist']"> Wishlist 
                 
               </a>
         </li>
@@ -53,8 +53,8 @@
             <div>
                 <div>
                    <ul>
-                       <li><a href="#">Login</a></li>
-                       <li><a href="#">Register</a></li>
+                       <li><a href="../login/">Login</a></li>
+                       <li><a href="../register/">Register</a></li>
                    </ul> 
                 </div>
             </div>

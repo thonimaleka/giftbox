@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { FilterComponent } from './filter/filter.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 
 
@@ -15,6 +18,8 @@ import { FilterComponent } from './filter/filter.component';
 
 const routes: Routes = [
   {path:'',redirectTo: 'landing',pathMatch: 'full'},
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent},
   {path:'home',component:HomeComponent},
   {path:'landing',component:LandingComponent},
   {path:'navbar',component:NavbarComponent},
@@ -22,7 +27,8 @@ const routes: Routes = [
   {path:'navbar3',component:Navbar3Component},
   {path:'cart',component:CartComponent},
   {path:'cartitem',component:CartItemComponent},
-  {path:'filter',component:FilterComponent}
+  {path:'filter',component:FilterComponent},
+  {path:'**',component:PageNotFoundComponent}
 ];
 
 @NgModule({

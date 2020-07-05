@@ -14,6 +14,9 @@ import { LandingChildComponent } from './landing-child/landing-child.component';
 import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { FilterComponent } from './filter/filter.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { FilterComponent } from './filter/filter.component';
     LandingChildComponent,
     CartComponent,
     CartItemComponent,
-    FilterComponent
+    FilterComponent,
+    LoginComponent,
+    RegisterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
