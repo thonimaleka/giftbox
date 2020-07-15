@@ -11,7 +11,8 @@ import { FilterComponent } from './filter/filter.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
-
+import { AdminComponent } from './admin/admin.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 
@@ -19,6 +20,7 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
 const routes: Routes = [
   {path:'',redirectTo: 'landing',pathMatch: 'full'},
   {path:'login', component:LoginComponent},
+  {path:'wishlist', component:WishlistComponent},
   {path:'register', component:RegisterComponent},
   {path:'home',component:HomeComponent},
   {path:'landing',component:LandingComponent},
@@ -28,7 +30,9 @@ const routes: Routes = [
   {path:'cart',component:CartComponent},
   {path:'cartitem',component:CartItemComponent},
   {path:'filter',component:FilterComponent},
+  {path:'admin',component:AdminComponent},
   {path:'**',component:PageNotFoundComponent}
+
 ];
 
 @NgModule({

@@ -13,7 +13,7 @@
           <!-- <strong> {{product.price | currency: '	&#82;'}}</strong> -->
           <strong>{{productItem.price.toLocaleString('en-ZA',{style: 'currency', currency:'ZAR'})}}</strong>
 
-          <i *ngIf ="addedToWishlist" class="fas fa-heart float-right" (click)="handleRemoveFromWishlist()"></i>
+          <i *ngIf ="addedToWishlist" class="fas fa-heart float-right" (click)="handleRemoveFromWishlist()" (click)="handleAddToWish()"></i>
           <i *ngIf ="!addedToWishlist" class="far fa-heart float-right" (click)="handleAddToWishlist()"></i>
       </p>
       <h4 class="card-title text-info">{{productItem.name}}</h4>
@@ -24,7 +24,7 @@
          (click) = "handleAddToCart()" >
           Add to Cart
         </button>
-        <button type="button" class="btn btn-sm btn-outline-secondary product-btn btn-outline-danger">Add to Wishlist</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary product-btn btn-outline-danger" (click)="handleAddToWish()">Add to wishlist</button>
       </div>
       
     </div>

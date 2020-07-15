@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  model: any = {}
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  login(){
+    //e.preventDefault();
+    console.log(this.model);
   }
 
 }

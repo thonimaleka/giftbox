@@ -17,6 +17,10 @@ import { FilterComponent } from './filter/filter.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminComponent } from './admin/admin.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { WishlistItemComponent } from './wishlist-item/wishlist-item.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,17 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
     FilterComponent,
     LoginComponent,
     RegisterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AdminComponent,
+    WishlistComponent,
+    WishlistItemComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

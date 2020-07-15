@@ -5,3 +5,4 @@ export const baseUrl = environment.production ? 'https://api.giftbox.com' : 'htt
 export const productsUrl = baseUrl + '/products'
 export const cartUrl = baseUrl + '/cart'
 export const wishlistUrl = baseUrl + '/wishlist'
+export const displayWishlistUrl = baseUrl + '/displayWishlist'
