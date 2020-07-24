@@ -85,110 +85,12 @@
       "price": 60
     }
   ],
-  "wishlist": [
-    {
-      "id": 9
-    },
-    {
-      "id": 2
-    },
-    {
-      "id": 1
-    },
-    {
-      "id": 6
-    }
-  ],
+  "wishlist": [],
   "displayWishlist": [
-    {
-      "product": {
-        "id": 3,
-        "name": "Rose Gold box",
-        "description": "For your significant other",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjWLddSl54fvd9FX1osLhdDbWN_SkdTSD-8g&usqp=CAU",
-        "price": 105
-      },
-      "id": 1
-    },
-    {
-      "product": {
-        "id": 3,
-        "name": "Rose Gold box",
-        "description": "For your significant other",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjWLddSl54fvd9FX1osLhdDbWN_SkdTSD-8g&usqp=CAU",
-        "price": 105
-      },
-      "id": 2
-    },
-    {
-      "product": {
-        "id": 6,
-        "name": "Gold stunner",
-        "description": "Gold giftbox best fits for 21+ birthdays or wedding gift",
-        "img": "https://previews.123rf.com/images/timmary/timmary1306/timmary130600012/20451784-gift-box-and-gold-ribbon-isolated-on-white-background.jpg",
-        "price": 269
-      },
-      "id": 3
-    }
+   
   ],
   "cart": [
-    {
-      "product": {
-        "id": 1,
-        "name": "Valentine Heart",
-        "description": "Giftbox ideal for valentines day for your significant other",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQdefgRvIBfKaj1AknxgFxZPxYa2jHB1mtnQ&usqp=CAU",
-        "price": 124
-      },
-      "id": 1
-    },
-    {
-      "product": {
-        "id": 6,
-        "name": "Gold stunner",
-        "description": "Gold giftbox best fits for 21+ birthdays or wedding gift",
-        "img": "https://previews.123rf.com/images/timmary/timmary1306/timmary130600012/20451784-gift-box-and-gold-ribbon-isolated-on-white-background.jpg",
-        "price": 269
-      },
-      "id": 2
-    },
-    {
-      "product": {
-        "id": 7,
-        "name": "Marble Box",
-        "description": "Nice subtle black and white box ideal for either gender gifting",
-        "img": "https://media.zid.store/e5658203-c2e2-4ac2-b451-fdefb7deaae7/208a339a-59f5-4c9f-a52d-9e7f0589f2c1.png",
-        "price": 300
-      },
-      "id": 3
-    },
-    {
-      "product": {
-        "id": 12,
-        "name": "Bridesmaid Love",
-        "description": "Giftbox for specially appreciating your lovely bridesmaids after your special wedding",
-        "img": "https://cdn.shopify.com/s/files/1/0084/6236/8865/products/Rose_Gold_Bridesmaid_Box_1060x_1_1200x1200.jpg?v=1557591329",
-        "price": 60
-      },
-      "id": 4
-    },
-    {
-      "product": {
-        "id": 2,
-        "name": "RedRiding",
-        "description": "Red box with gold bow",
-        "img": "https://5.imimg.com/data5/IH/JL/MY-47546568/gift-box-500x500.jpg",
-        "price": 150
-      },
-      "id": 5
-    }
-  ],
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+    
   ],
   "comments": [
     {
