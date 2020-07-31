@@ -21,6 +21,7 @@ import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { WishlistItemComponent } from './wishlist-item/wishlist-item.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { WishlistItemComponent } from './wishlist-item/wishlist-item.component';
     PageNotFoundComponent,
     AdminComponent,
     WishlistComponent,
-    WishlistItemComponent
+    WishlistItemComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

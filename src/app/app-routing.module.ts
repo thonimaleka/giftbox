@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { AdminComponent } from './admin/admin.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { OrderComponent } from './order/order.component';
 
 
 
@@ -31,6 +32,7 @@ const routes: Routes = [
   {path:'cartitem',component:CartItemComponent},
   {path:'filter',component:FilterComponent},
   {path:'admin',component:AdminComponent},
+  {path:'order',component:OrderComponent},
   {path:'**',component:PageNotFoundComponent}
 
 ];

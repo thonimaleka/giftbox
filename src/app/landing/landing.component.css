@@ -13,3 +13,11 @@
  *{
   font-family: 'MuseoModerno', cursive;
  }
+
+ .carousel-caption p{
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    background-color: rgba(255, 255, 255, .4);
+    /* opacity: 0; */
+}

@@ -1,0 +1,62 @@
+<h1> PLACE YOUR ORDER </h1>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+        <form #values="ngForm">
+            <div class="col-75">
+                <div class="container">
+                    <h3>Billing Address</h3>
+            <div class="form-group">
+              <label for="exampleInputEmail1" ><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" [(ngModel)]="orderData.full_name" placeholder="your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleInputEmail1"><i class="fa fa-envelope"></i> Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="email" [(ngModel)]="orderData.email" placeholder="sosomeone@example.com"> 
+              </div>
+            
+              <div class="form-group">
+                <label for="exampleInputEmail1"> <i class="fa fa-phone"></i>Phone</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone" [(ngModel)]="orderData.phone" placeholder="085 666 0945">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="address" [(ngModel)]="orderData.address" placeholder="175 Noth street">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1"><i class="fa fa-institution"></i> City</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="city" [(ngModel)]="orderData.city" placeholder="Pretoria">
+              </div>
+
+              <div class="form-group">
+                <div class="row"> 
+                    <div class="col-50">
+                <label for="exampleInputEmail1">Province</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="province" [(ngModel)]="orderData.province" placeholder="Limpopo">
+              </div>
+            </div>
+        </div>
+        
+
+              <div class="form-group">
+                <div class="row"> 
+                <div class="col-50">
+                <label for="exampleInputEmail1">Code</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="code" [(ngModel)]="orderData.code"  placeholder="0001">
+              </div>
+            </div>
+        </div>
+      
+
+            <button type="submit" class="btn btn-primary" (click)="placeOrder()" (click)= "stepperClick()">Submit</button>
+        </div>
+    </div>
+          </form> 
+
+          </div>  
+        </div>
+     </div> 
+
