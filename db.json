@@ -87,10 +87,58 @@
   ],
   "wishlist": [],
   "displayWishlist": [
-   
+    {
+      "product": {
+        "id": 2,
+        "name": "RedRiding",
+        "description": "Red box with gold bow",
+        "img": "https://5.imimg.com/data5/IH/JL/MY-47546568/gift-box-500x500.jpg",
+        "price": 150
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 6,
+        "name": "Gold stunner",
+        "description": "Gold giftbox best fits for 21+ birthdays or wedding gift",
+        "img": "https://previews.123rf.com/images/timmary/timmary1306/timmary130600012/20451784-gift-box-and-gold-ribbon-isolated-on-white-background.jpg",
+        "price": 269
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 6,
+        "name": "Gold stunner",
+        "description": "Gold giftbox best fits for 21+ birthdays or wedding gift",
+        "img": "https://previews.123rf.com/images/timmary/timmary1306/timmary130600012/20451784-gift-box-and-gold-ribbon-isolated-on-white-background.jpg",
+        "price": 269
+      },
+      "id": 3
+    }
   ],
   "cart": [
-    
+    {
+      "product": {
+        "id": 3,
+        "name": "Rose Gold box",
+        "description": "For your significant other",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjWLddSl54fvd9FX1osLhdDbWN_SkdTSD-8g&usqp=CAU",
+        "price": 105
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Valentine Heart",
+        "description": "Giftbox ideal for valentines day for your significant other",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQdefgRvIBfKaj1AknxgFxZPxYa2jHB1mtnQ&usqp=CAU",
+        "price": 124
+      },
+      "id": 2
+    }
   ],
   "comments": [
     {
